@@ -1,3 +1,2 @@
 version=3
-http://pypi.python.org/packages/source/f/frozendict frozendict-(.*).tar.gz
-
+http://pypi.debian.net/frozendict/frozendict-(.*).tar.gz
