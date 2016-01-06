@@ -1,0 +1,59 @@
+Source: python-frozendict
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-setuptools,
+               python-all,
+               python3-setuptools,
+               python3-all
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-frozendict.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-frozendict.git
+Homepage: https://github.com/slezica/python-frozendict
+
+Package: python-frozendict
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: immutable dictionary - Python 2.7
+ Frozendict is an immutable wrapper around dictionaries that implements the
+ complete mapping interface. It can be used as a drop-in replacement for
+ dictionaries where immutability is desired.
+ .
+ Of course, this is Python, and you can still poke around the object's
+ internals if you want.
+ .
+ The frozendict constructor mimics dict, and all of the expected interfaces
+ (iter, len, repr, hash, getitem) are provided. Note that a frozendict does not
+ guarantee the immutability of its values, so the utility of hash method is
+ restricted by usage.
+ .
+ The only difference is that the copy() method of frozendict takes variable
+ keyword arguments, which will be present as key/value pairs in the new,
+ immutable copy.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-frozendict
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: immutable dictionary - Python 3.x
+ Frozendict is an immutable wrapper around dictionaries that implements the
+ complete mapping interface. It can be used as a drop-in replacement for
+ dictionaries where immutability is desired.
+ .
+ Of course, this is Python, and you can still poke around the object's
+ internals if you want.
+ .
+ The frozendict constructor mimics dict, and all of the expected interfaces
+ (iter, len, repr, hash, getitem) are provided. Note that a frozendict does not
+ guarantee the immutability of its values, so the utility of hash method is
+ restricted by usage.
+ .
+ The only difference is that the copy() method of frozendict takes variable
+ keyword arguments, which will be present as key/value pairs in the new,
+ immutable copy.
+ .
+ This package contains the Python 3.x module.

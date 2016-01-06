@@ -1,0 +1,5 @@
+python-frozendict (0.5-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 06 Jan 2016 18:48:35 +0800
